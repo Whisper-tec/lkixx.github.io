@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#b91c1c">
+  <meta name="theme-color" content="#ff3b3b">
   <meta name="description" content="LKIXX Footwear — curated footwear, streetstyle bundles, and weekly batch pre-orders.">
   <title>LKIXX Footwear | Elevated Soles & Streetstyle</title>
+  
+  <!-- Custom Browser Tab Favicon (Lkixx 'L' Icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff3b3b'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23101114' font-family='sans-serif' font-weight='900' font-size='20'%3EL%3Ctext%3E%3C/svg%3E">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = { theme: { extend: {
@@ -29,9 +33,7 @@
     .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
     .reveal.is-visible{opacity:1;transform:translateY(0)}
     .hero-float{animation:heroFloat 6s ease-in-out infinite}
-    .pulse-dot{animation:pulseDot 2s ease-in-out infinite}
     @keyframes heroFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(.5deg)}}
-    @keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.82)}}
     .btn-primary{box-shadow:0 8px 28px rgba(255,59,59,.14)}
     .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(255,59,59,.25)}
     .back-to-top{opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
