@@ -1,312 +1,280 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ff3b3b">
-  <meta name="description" content="LKIXX Footwear — curated footwear, streetstyle bundles, and weekly batch pre-orders.">
-  <title>LKIXX Footwear | Elevated Soles & Streetstyle</title>
-  
-  <!-- Custom Browser Tab Favicon (Lkixx 'L' Icon) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff3b3b'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23101114' font-family='sans-serif' font-weight='900' font-size='20'%3EL%3Ctext%3E%3C/svg%3E">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: {
-      colors: { ink:"#101114", panel:"#191b20", line:"#30323a", flame:"#ff3b3b", muted:"#a7a9b3" },
-      boxShadow: { glow:"0 18px 70px rgba(255,59,59,.18)" }
-    }}};
-  </script>
-  <style>
-    :root{color-scheme:dark}
-    html{scroll-behavior:smooth;scroll-padding-top:90px}
-    body{margin:0;background:#101114;color:#f5f5f6;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-    a,button{-webkit-tap-highlight-color:transparent}
-    a:focus-visible,button:focus-visible{outline:3px solid #ff3b3b;outline-offset:3px}
-    .eyebrow{letter-spacing:.18em}
-    .hero-grid{background-image:radial-gradient(ellipse at 78% 35%,rgba(255,59,59,.18),transparent 34%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:auto,44px 44px,44px 44px}
-    .btn-primary{background:#ff3b3b;color:#101114}
-    .btn-primary:hover{background:#ff7777}
-    .btn-secondary:hover{border-color:#ff3b3b;color:#ff3b3b}
-    .product-card{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
-    .product-card:hover{transform:translateY(-5px);border-color:#ff3b3b;box-shadow:0 18px 45px rgba(255,59,59,.09)}
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
-    .reveal.is-visible{opacity:1;transform:translateY(0)}
-    .hero-float{animation:heroFloat 6s ease-in-out infinite}
-    @keyframes heroFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(.5deg)}}
-    .btn-primary{box-shadow:0 8px 28px rgba(255,59,59,.14)}
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(255,59,59,.25)}
-    .back-to-top{opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
-    .back-to-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
-    .catalog-card[hidden]{display:none!important}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ff3b3b">
+<meta name="description" content="LKIXX Footwear — curated footwear, streetstyle bundles, and weekly batch pre-orders.">
+<title>LKIXX Footwear | Elevated Soles & Streetstyle</title>
+​<!-- Custom Browser Tab Favicon (Lkixx 'L' Icon) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff3b3b'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23101114' font-family='sans-serif' font-weight='900' font-size='20'%3EL%3Ctext%3E%3C/svg%3E">
+​<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+colors: { ink:"#101114", panel:"#191b20", line:"#30323a", flame:"#ff3b3b", muted:"#a7a9b3" },
+boxShadow: { glow:"0 18px 70px rgba(255,59,59,.18)" }
+}}};
+</script>
+<style>
+:root{color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:#101114;color:#f5f5f6;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a,button{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible{outline:3px solid #ff3b3b;outline-offset:3px}
+.eyebrow{letter-spacing:.18em}
+.hero-grid{background-image:radial-gradient(ellipse at 78% 35%,rgba(255,59,59,.18),transparent 34%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:auto,44px 44px,44px 44px}
+.btn-primary{background:#ff3b3b;color:#101114}
+.btn-primary:hover{background:#ff7777}
+.btn-secondary:hover{border-color:#ff3b3b;color:#ff3b3b}
+.product-card{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.product-card:hover{transform:translateY(-5px);border-color:#ff3b3b;box-shadow:0 18px 45px rgba(255,59,59,.09)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.hero-float{animation:heroFloat 6s ease-in-out infinite}
+@keyframes heroFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(.5deg)}}
+.btn-primary{box-shadow:0 8px 28px rgba(255,59,59,.14)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(255,59,59,.25)}
+.back-to-top{opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
+.back-to-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+.catalog-card[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto},::before,::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style>
 </head>
 <body class="antialiased selection:bg-flame selection:text-white">
-  <div class="border-b border-line bg-flame px-4 py-2 text-center text-xs font-extrabold tracking-wide text-ink sm:text-sm">
-    RUNNER PROMO · Use code <span class="mx-1 rounded bg-ink px-2 py-1 text-flame">RUNNERFREE</span> for free door-to-door delivery on bundle orders*
-  </div>
-
-  <div id="scrollProgress" aria-hidden="true" class="fixed left-0 top-0 z-[60] h-1 w-0 bg-flame shadow-[0_0_12px_rgba(255,59,59,.65)]"></div>
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/90 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="#home" class="flex items-center gap-3" aria-label="LKIXX home">
-        <span class="grid h-10 w-10 place-items-center rounded-xl bg-flame text-xl font-black text-ink">L</span>
-        <span class="text-xl font-black tracking-[.16em]">LKIXX<span class="text-flame">.</span></span>
-      </a>
-      <nav class="hidden items-center gap-7 text-sm font-semibold text-slate-300 md:flex" aria-label="Main navigation">
-        <a class="hover:text-flame" href="#about">Our Story</a><a class="hover:text-flame" href="#catalog">Catalog</a>
-        <a class="hover:text-flame" href="#process">How It Works</a><a class="hover:text-flame" href="#contact">Contact</a>
-      </nav>
-      <a href="#catalog" class="btn-primary hidden rounded-full px-5 py-3 text-sm font-extrabold transition md:inline-flex">Explore Bundles ↗</a>
-      <button id="mobileMenuBtn" class="rounded-lg border border-line p-2 md:hidden" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
-        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-    <nav id="mobileMenu" class="hidden border-t border-line bg-ink px-4 py-4 md:hidden" aria-label="Mobile navigation">
-      <div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm font-semibold text-slate-300">
-        <a class="mobile-link hover:text-flame" href="#about">Our Story</a><a class="mobile-link hover:text-flame" href="#catalog">Catalog & Pricing</a>
-        <a class="mobile-link hover:text-flame" href="#process">How It Works</a><a class="mobile-link hover:text-flame" href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero-grid overflow-hidden border-b border-line">
-      <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 py-14 sm:px-6 md:py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
-        <div class="relative z-10">
-          <p class="eyebrow mb-5 text-xs font-extrabold uppercase text-flame">Elevated soles. Everyday stories.</p>
-          <h1 class="max-w-3xl text-5xl font-black leading-[.98] tracking-tight sm:text-6xl lg:text-7xl">MOVE YOUR<br><span class="text-flame">OWN WAY.</span></h1>
-          <p class="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">Find your next everyday pair, refresh your rotation, and build your streetstyle with curated footwear bundles from LKIXX.</p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#catalog" class="btn-primary inline-flex items-center justify-center rounded-full px-7 py-4 text-sm font-extrabold transition">Shop bundles ↗</a>
-            <a href="#process" class="btn-secondary inline-flex items-center justify-center rounded-full border border-line px-7 py-4 text-sm font-bold transition">How pre-order works</a>
-          </div>
-          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-slate-400">
-            <span><span class="mr-2 text-flame">●</span>Weekly batch ordering</span><span><span class="mr-2 text-flame">●</span>CM size guidance</span><span><span class="mr-2 text-flame">●</span>Order checks</span>
-          </div>
-          <p class="mt-4 max-w-xl text-xs leading-5 text-slate-500">*Promo eligibility and delivery coverage should be confirmed when ordering.</p>
-        </div>
-
-        <div class="hero-float relative mx-auto w-full max-w-xl">
-          <div class="absolute inset-8 rounded-full bg-flame/10 blur-3xl" aria-hidden="true"></div>
-          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#321719] via-[#1b1518] to-[#111215] p-5 shadow-glow sm:p-8">
-            <div class="flex items-start justify-between gap-3"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-slate-400">LKIXX / Footwear</p><p class="mt-2 text-2xl font-black">Your next rotation.</p></div><span class="rounded-full border border-flame/40 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-flame">Street essentials</span></div>
-            <svg class="mx-auto my-4 w-full max-w-[440px]" style="filter:drop-shadow(0 30px 24px rgba(0,0,0,.42))" viewBox="0 0 560 350" role="img" aria-label="Stylized illustration of a modern sneaker">
-              <defs><linearGradient id="upper" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f3f3e9"/><stop offset=".55" stop-color="#c7c9bd"/><stop offset="1" stop-color="#777d75"/></linearGradient><linearGradient id="sole" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f9f9ed"/><stop offset="1" stop-color="#aeb3a6"/></linearGradient></defs>
-              <ellipse cx="285" cy="280" rx="205" ry="26" fill="#000" opacity=".35"/>
-              <g transform="translate(18 4) rotate(-8 280 180)">
-                <path d="M77 219C108 210 138 181 170 146L210 96C224 80 242 77 257 89L318 143C348 164 386 174 430 187L478 207C498 216 512 235 506 251C500 264 482 269 456 269H110C79 269 63 251 77 219Z" fill="url(#upper)" stroke="#eef0e6" stroke-width="3"/>
-                <path d="M171 146L208 113L249 153L211 192Z" fill="#8e958b" opacity=".8"/><path d="M226 94L278 143L248 161L208 117Z" fill="#e7e9df"/><path d="M258 99L306 144L280 160L237 119Z" fill="#a7ada1"/><path d="M302 134L338 160L310 180L278 153Z" fill="#e6e8dd"/>
-                <path d="M115 212C166 201 197 210 226 229L111 229Z" fill="#353a36"/><path d="M230 229H451C477 229 493 236 497 248C496 261 478 265 451 265H110C89 265 77 256 81 242L87 231C99 228 111 229 115 229Z" fill="url(#sole)" stroke="#f5f6ec" stroke-width="3"/>
-                <path d="M97 250C190 258 344 257 490 250" fill="none" stroke="#737a70" stroke-width="3" stroke-linecap="round"/><path d="M190 141L237 184M207 130L253 174M226 121L269 163M246 116L285 154" stroke="#555d54" stroke-width="6" stroke-linecap="round"/>
-                <path d="M163 164C180 161 192 166 203 177" stroke="#f9f9f0" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M338 165C363 183 392 189 424 198" stroke="#7c8278" stroke-width="3" fill="none"/>
-                <text x="342" y="222" fill="#42483f" font-size="18" font-weight="900" letter-spacing="4">LKXX</text>
-              </g>
-            </svg>
-            <div class="flex items-center justify-between border-t border-white/10 pt-4"><div><p class="text-xs text-slate-400">Curated for your everyday</p><p class="mt-1 font-bold">Style starts with your stride.</p></div><span class="grid h-11 w-11 place-items-center rounded-full bg-flame text-xl font-black text-ink" aria-hidden="true">↗</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-      <div class="grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
-        <div><p class="eyebrow text-xs font-extrabold uppercase text-flame">More than footwear</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">A legacy in<br>every step.</h2></div>
-        <div class="space-y-5 text-sm leading-7 text-slate-300 sm:text-base">
-          <p><strong class="text-white">LKIXX</strong> was created in loving memory of a cherished family member whose life ended too soon. The “L” carries her legacy, while “kixx” reflects our love for footwear and the everyday journeys that move us forward.</p>
-          <p>Each order is part of a bigger story: family, resilience, and building something meaningful through hard work. We want to help our community find footwear that fits their style and budget—one step at a time.</p>
-          <div class="grid gap-4 pt-3 sm:grid-cols-2">
-            <article class="rounded-2xl border border-line bg-panel p-5"><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Our mission</p><p class="mt-3 text-sm leading-6 text-slate-300">Make footwear shopping more accessible through clear pricing, size guidance, and an organized pre-order process.</p></article>
-            <article class="rounded-2xl border border-line bg-panel p-5"><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Our vision</p><p class="mt-3 text-sm leading-6 text-slate-300">Grow a trusted, community-driven footwear brand built on purpose, care, and forward movement.</p></article>
-          </div>
-        </div>
-      </div>
-      <div class="mt-12 grid gap-4 sm:grid-cols-3">
-        <article class="rounded-2xl border border-line bg-panel p-5"><span class="text-2xl" aria-hidden="true">↗</span><h3 class="mt-3 font-bold">Batch-based ordering</h3><p class="mt-2 text-sm leading-6 text-slate-400">Orders are grouped into weekly batches to coordinate supplier orders efficiently.</p></article>
-        <article class="rounded-2xl border border-line bg-panel p-5"><span class="text-2xl" aria-hidden="true">⌁</span><h3 class="mt-3 font-bold">CM size guidance</h3><p class="mt-2 text-sm leading-6 text-slate-400">Measure your foot in centimeters and confirm the sizing guide before ordering.</p></article>
-        <article class="rounded-2xl border border-line bg-panel p-5"><span class="text-2xl" aria-hidden="true">✓</span><h3 class="mt-3 font-bold">Order checks</h3><p class="mt-2 text-sm leading-6 text-slate-400">Orders are checked before dispatch; inspection and delivery timelines are confirmed per batch.</p></article>
-      </div>
-    </section>
-
-    <section id="catalog" class="border-y border-line bg-[#1a1012]">
-      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-          <div><p class="eyebrow text-xs font-extrabold uppercase text-flame">Find your fit</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Bundles & pricing</h2><p class="mt-3 max-w-xl text-sm leading-6 text-slate-400">Choose a single pair or build your rotation. Confirm prices and availability before payment.</p></div>
-          <a href="#contact" class="btn-secondary inline-flex items-center justify-center self-start rounded-full border border-line px-5 py-3 text-sm font-bold transition sm:self-auto">Ask about an order ↗</a>
-        </div>
-        <div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="Filter catalog">
-          <button type="button" data-filter="all" aria-pressed="true" class="tab-btn rounded-full bg-flame px-4 py-2.5 text-xs font-extrabold text-ink transition">All options</button>
-          <button type="button" data-filter="single" aria-pressed="false" class="tab-btn rounded-full border border-line bg-panel px-4 py-2.5 text-xs font-bold text-slate-300 transition">Single pairs</button>
-          <button type="button" data-filter="bundle" aria-pressed="false" class="tab-btn rounded-full border border-line bg-panel px-4 py-2.5 text-xs font-bold text-slate-300 transition">Bundles & sets</button>
-          <button type="button" data-filter="mega" aria-pressed="false" class="tab-btn rounded-full border border-line bg-panel px-4 py-2.5 text-xs font-bold text-slate-300 transition">4-in-1 Mega Box</button>
-        </div>
-
-        <div class="mt-6 grid gap-5 md:grid-cols-2">
-          <article class="catalog-card product-card single rounded-3xl border border-line bg-panel p-6 sm:p-7">
-            <div class="flex items-start justify-between gap-4"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Starter / everyday</p><h3 class="mt-2 text-xl font-black">Single Pair Tiering</h3></div><span class="rounded-full border border-line px-3 py-1 text-[10px] font-bold text-slate-400">01 PAIR</span></div>
-            <p class="mt-3 text-sm text-slate-400">Choose an individual pair based on the available grade.</p>
-            <div class="mt-5 divide-y divide-line border-t border-line">
-              <div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">Class A Daily Beater</span><strong class="whitespace-nowrap text-flame">₱899–₱1,199</strong></div>
-              <div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">Premium Grade 1 & 2</span><strong class="whitespace-nowrap text-flame">₱1,499–₱1,999</strong></div>
-              <div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">High-OEM / Top Tier</span><strong class="whitespace-nowrap text-flame">₱2,199–₱2,699</strong></div>
-              <div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">Nike Mind Slides</span><strong class="whitespace-nowrap text-flame">₱699–₱899</strong></div>
-            </div><p class="mt-4 text-xs leading-5 text-slate-500">Confirm availability, grade details, and sizing before payment.</p>
-          </article>
-
-          <article class="catalog-card product-card bundle rounded-3xl border border-line bg-panel p-6 sm:p-7">
-            <div class="flex items-start justify-between gap-4"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Everyday rotation</p><h3 class="mt-2 text-xl font-black">2-Piece Dynamic Duo</h3></div><span class="rounded-full border border-line px-3 py-1 text-[10px] font-bold text-slate-400">2 ITEMS</span></div>
-            <p class="mt-3 text-sm text-slate-400">1 × Class A Beater + 1 × Premium Grade Shoe.</p>
-            <div class="mt-5 rounded-2xl border border-flame/20 bg-flame/[.06] p-5"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Bundle price</p><p class="mt-1 text-3xl font-black tracking-tight text-flame">₱2,199–₱2,699</p><p class="mt-2 text-xs text-slate-300">Advertised savings: ₱300+ versus separate purchases.</p></div>
-            <p class="mt-4 text-xs leading-5 text-slate-500">A practical option for daily rotation and active wear.</p>
-          </article>
-
-          <article class="catalog-card product-card bundle rounded-3xl border border-line bg-panel p-6 sm:p-7">
-            <div class="flex items-start justify-between gap-4"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Complete street set</p><h3 class="mt-2 text-xl font-black">3-Piece Trio Set</h3></div><span class="rounded-full border border-line px-3 py-1 text-[10px] font-bold text-slate-400">3 ITEMS</span></div>
-            <p class="mt-3 text-sm text-slate-400">1 × Class A + 1 × Premium + 1 × Nike Mind Slides.</p>
-            <div class="mt-5 rounded-2xl border border-flame/20 bg-flame/[.06] p-5"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Bundle price</p><p class="mt-1 text-3xl font-black tracking-tight text-flame">₱2,599–₱3,199</p><p class="mt-2 text-xs text-slate-300">Advertised savings: ₱500+ versus separate purchases.</p></div>
-            <p class="mt-4 text-xs leading-5 text-slate-500">Includes slides for casual wear or post-workout use.</p>
-          </article>
-
-          <article class="catalog-card product-card mega relative overflow-hidden rounded-3xl border border-flame/40 bg-gradient-to-br from-[#351919] to-panel p-6 sm:p-7">
-            <span class="absolute right-5 top-5 rounded-full bg-flame px-3 py-1 text-[10px] font-black uppercase tracking-wider text-ink">Best value</span>
-            <p class="eyebrow text-[10px] font-extrabold uppercase text-flame">The ultimate collection</p><h3 class="mt-2 pr-24 text-xl font-black">4-in-1 Mega Box</h3><p class="mt-3 text-sm text-slate-300">Four items in one bundle. Compare the options below.</p>
-            <div class="mt-5 space-y-3">
-              <div class="rounded-xl border border-white/10 bg-black/20 p-4"><div class="flex items-start justify-between gap-3"><div><p class="font-bold">Starter Box</p><p class="mt-1 text-xs leading-5 text-slate-400">3 × Class A + 1 × Slides</p></div><strong class="whitespace-nowrap text-flame">₱3,299</strong></div></div>
-              <div class="rounded-xl border border-white/10 bg-black/20 p-4"><div class="flex items-start justify-between gap-3"><div><p class="font-bold">Pro Box</p><p class="mt-1 text-xs leading-5 text-slate-400">2 × Class A + 1 × Premium + 1 × Slides</p></div><strong class="whitespace-nowrap text-flame">₱3,699</strong></div></div>
-              <div class="rounded-xl border border-white/10 bg-black/20 p-4"><div class="flex items-start justify-between gap-3"><div><p class="font-bold">VIP Box</p><p class="mt-1 text-xs leading-5 text-slate-400">1 × Class A + 2 × Premium + 1 × Slides</p></div><strong class="whitespace-nowrap text-flame">₱3,999</strong></div></div>
-            </div><p class="mt-4 text-xs leading-5 text-slate-500">Confirm styles, size availability, and final price when ordering.</p>
-          </article>
-        </div>
-        <p id="filterStatus" class="sr-only" aria-live="polite">Showing all catalog options.</p>
-      </div>
-    </section>
-
-    <section id="process" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-      <div class="max-w-2xl"><p class="eyebrow text-xs font-extrabold uppercase text-flame">Simple by design</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">How batch ordering works</h2><p class="mt-3 text-sm leading-6 text-slate-400">Review the steps before submitting your order. Availability and delivery timing can vary by batch.</p></div>
-      <div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 01</p><h3 class="mt-4 font-bold">Submit your order</h3><p class="mt-2 text-sm leading-6 text-slate-400">Complete the Google Form Monday to Friday before the 10 PM cut-off and follow the stated deposit instructions.</p></article>
-        <article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 02</p><h3 class="mt-4 font-bold">Friday cut-off</h3><p class="mt-2 text-sm leading-6 text-slate-400">Order details are checked and grouped into the weekly batch.</p></article>
-        <article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 03</p><h3 class="mt-4 font-bold">Supplier processing</h3><p class="mt-2 text-sm leading-6 text-slate-400">The batch is submitted to the supplier. Processing and dispatch depend on supplier availability.</p></article>
-        <article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 04</p><h3 class="mt-4 font-bold">Check & delivery</h3><p class="mt-2 text-sm leading-6 text-slate-400">Orders are checked before dispatch. Delivery details are shared once confirmed.</p></article>
-      </div>
-      <div class="mt-6 rounded-2xl border border-flame/20 bg-flame/[.05] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6"><div><h3 class="font-bold">Before you pay</h3><p class="mt-1 text-sm leading-6 text-slate-400">Confirm the final price, size, product grade, payment terms, delivery coverage, and estimated arrival date.</p></div><a href="#contact" class="btn-primary mt-4 inline-flex shrink-0 items-center justify-center rounded-full px-5 py-3 text-sm font-extrabold transition sm:mt-0">Contact LKIXX ↗</a></div>
-    </section>
-
-    <section id="contact" class="border-t border-line bg-[#1a1012]">
-      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[.85fr_1.15fr] lg:items-center lg:px-8 lg:py-20">
-        <div><p class="eyebrow text-xs font-extrabold uppercase text-flame">Let's get you moving</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Ready for your next pair?</h2><p class="mt-4 max-w-lg text-sm leading-7 text-slate-400">Place your pre-order or message us to ask about sizes, bundle availability, and the next batch. Replace the placeholder links with your official links before publishing.</p></div>
-        <div class="rounded-3xl border border-line bg-panel p-5 sm:p-7">
-          <a id="orderLink" href="YOUR_GOOGLE_FORM_URL" target="_blank" rel="noopener noreferrer" class="btn-primary flex w-full items-center justify-between rounded-xl px-5 py-4 font-extrabold transition"><span><span class="block text-[10px] uppercase tracking-widest opacity-70">Order online</span><span class="mt-1 block">Fill out the pre-order form</span></span><span class="text-xl" aria-hidden="true">↗</span></a>
-          <a id="facebookLink" href="YOUR_FACEBOOK_PAGE_URL" target="_blank" rel="noopener noreferrer" class="mt-3 flex w-full items-center justify-between rounded-xl border border-line bg-[#202228] px-5 py-4 font-bold transition hover:border-flame/50"><span><span class="block text-[10px] uppercase tracking-widest text-slate-500">Facebook</span><span class="mt-1 block">Message our page</span></span><span class="text-xl" aria-hidden="true">↗</span></a>
-          <a id="instagramLink" href="YOUR_INSTAGRAM_URL" target="_blank" rel="noopener noreferrer" class="mt-3 flex w-full items-center justify-between rounded-xl border border-line bg-[#202228] px-5 py-4 font-bold transition hover:border-flame/50"><span><span class="block text-[10px] uppercase tracking-widest text-slate-500">Instagram</span><span class="mt-1 block">@lkixx_ph</span></span><span class="text-xl" aria-hidden="true">↗</span></a>
-          <p id="placeholderWarning" class="mt-4 rounded-lg bg-amber-300/10 px-3 py-2 text-xs leading-5 text-amber-200">Setup reminder: update the Google Form, Facebook, and Instagram URLs in the HTML before publishing.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <button id="backToTop" class="back-to-top fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-flame text-xl font-black text-white shadow-lg shadow-red-950/40" type="button" aria-label="Back to top">↑</button>
-  <footer class="border-t border-line px-4 py-8 text-center"><a href="#home" class="text-sm font-black tracking-[.16em]">LKIXX<span class="text-flame">.</span></a><p class="mt-2 text-xs text-slate-500">© <span id="year">2026</span> LKIXX Footwear. All rights reserved.</p><p class="mt-1 text-xs text-slate-600">Every stride honors a legacy.</p></footer>
-
-  <script>
-    // Scroll reveal: progressive enhancement with reduced-motion support.
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const revealTargets = document.querySelectorAll("main section, main section article, main section .rounded-3xl");
-    revealTargets.forEach((element, index) => {
-      element.classList.add("reveal");
-      element.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
-    });
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      revealTargets.forEach(element => element.classList.add("is-visible"));
-    } else {
-      const revealObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: "0px 0px -35px 0px" });
-      revealTargets.forEach(element => revealObserver.observe(element));
-    }
-
-    // Scroll progress and back-to-top control.
-    const scrollProgress = document.getElementById("scrollProgress");
-    const backToTop = document.getElementById("backToTop");
-    let scrollTicking = false;
-    function updateScrollUI() {
-      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
-      scrollProgress.style.width = `${progress}%`;
-      backToTop.classList.toggle("is-visible", window.scrollY > 500);
-      scrollTicking = false;
-    }
-    window.addEventListener("scroll", () => {
-      if (!scrollTicking) {
-        window.requestAnimationFrame(updateScrollUI);
-        scrollTicking = true;
-      }
-    }, { passive: true });
-    backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }));
-    updateScrollUI();
-
-    // Mobile navigation
-    const menuButton = document.getElementById("mobileMenuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    function setMenu(open) {
-      mobileMenu.classList.toggle("hidden", !open);
-      menuButton.setAttribute("aria-expanded", String(open));
-      menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
-    }
-    menuButton.addEventListener("click", () => setMenu(menuButton.getAttribute("aria-expanded") !== "true"));
-    document.querySelectorAll(".mobile-link").forEach(link => link.addEventListener("click", () => setMenu(false)));
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
-        setMenu(false); menuButton.focus();
-      }
-    });
-
-    // Catalog filters
-    const filterButtons = document.querySelectorAll(".tab-btn");
-    const cards = document.querySelectorAll(".catalog-card");
-    const filterStatus = document.getElementById("filterStatus");
-    const filterNames = {all:"all catalog options",single:"single pairs",bundle:"bundles and sets",mega:"4-in-1 Mega Box options"};
-    filterButtons.forEach(button => button.addEventListener("click", () => {
-      const category = button.dataset.filter;
-      filterButtons.forEach(item => {
-        const active = item === button;
-        item.setAttribute("aria-pressed", String(active));
-        item.classList.toggle("bg-flame", active);
-        item.classList.toggle("text-ink", active);
-        item.classList.toggle("border", !active);
-        item.classList.toggle("border-line", !active);
-        item.classList.toggle("bg-panel", !active);
-        item.classList.toggle("text-slate-300", !active);
-        item.classList.toggle("font-extrabold", active);
-        item.classList.toggle("font-bold", !active);
-      });
-      cards.forEach(card => card.hidden = category !== "all" && !card.classList.contains(category));
-      filterStatus.textContent = "Showing " + filterNames[category] + ".";
-    }));
-
-    // Update copyright year automatically
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Placeholder links are prevented from opening invalid destinations
-    const links = [["orderLink","YOUR_GOOGLE_FORM_URL"],["facebookLink","YOUR_FACEBOOK_PAGE_URL"],["instagramLink","YOUR_INSTAGRAM_URL"]];
-    let placeholdersFound = false;
-    links.forEach(([id, placeholder]) => {
-      const link = document.getElementById(id);
-      if (link.getAttribute("href") === placeholder) {
-        placeholdersFound = true;
-        link.addEventListener("click", event => {
-          event.preventDefault();
-          alert("This link is not configured yet. Update the website HTML with the correct LKIXX link before publishing.");
-        });
-      }
-    });
-    if (!placeholdersFound) document.getElementById("placeholderWarning").hidden = true;
-  </script>
+<div class="border-b border-line bg-flame px-4 py-2 text-center text-xs font-extrabold tracking-wide text-ink sm:text-sm">
+RUNNER PROMO · Use code <span class="mx-1 rounded bg-ink px-2 py-1 text-flame">RUNNERFREE</span> for free door-to-door delivery on bundle orders
+</div>
+​<div id="scrollProgress" aria-hidden="true" class="fixed left-0 top-0 z-[60] h-1 w-0 bg-flame shadow-[0_0_12px_rgba(255,59,59,.65)]"></div>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-ink/90 backdrop-blur-xl">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+<a href="#home" class="flex items-center gap-3" aria-label="LKIXX home">
+<span class="grid h-10 w-10 place-items-center rounded-xl bg-flame text-xl font-black text-ink">L</span>
+<span class="text-xl font-black tracking-[.16em]">LKIXX<span class="text-flame">.</span></span>
+</a>
+<nav class="hidden items-center gap-7 text-sm font-semibold text-slate-300 md:flex" aria-label="Main navigation">
+<a class="hover:text-flame" href="#about">Our Story</a><a class="hover:text-flame" href="#catalog">Catalog</a>
+<a class="hover:text-flame" href="#process">How It Works</a><a class="hover:text-flame" href="#contact">Contact</a>
+</nav>
+<a href="#catalog" class="btn-primary hidden rounded-full px-5 py-3 text-sm font-extrabold transition md:inline-flex">Explore Bundles ↗</a>
+<button id="mobileMenuBtn" class="rounded-lg border border-line p-2 md:hidden" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+<nav id="mobileMenu" class="hidden border-t border-line bg-ink px-4 py-4 md:hidden" aria-label="Mobile navigation">
+<div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm font-semibold text-slate-300">
+<a class="mobile-link hover:text-flame" href="#about">Our Story</a><a class="mobile-link hover:text-flame" href="#catalog">Catalog & Pricing</a>
+<a class="mobile-link hover:text-flame" href="#process">How It Works</a><a class="mobile-link hover:text-flame" href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+​<main>
+<section id="home" class="hero-grid overflow-hidden border-b border-line">
+<div class="mx-auto grid max-w-7xl items-center gap-8 px-4 py-14 sm:px-6 md:py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
+<div class="relative z-10">
+<p class="eyebrow mb-5 text-xs font-extrabold uppercase text-flame">Elevated soles. Everyday stories.</p>
+<h1 class="max-w-3xl text-5xl font-black leading-[.98] tracking-tight sm:text-6xl lg:text-7xl">MOVE YOUR
+<span class="text-flame">OWN WAY.</span></h1>
+<p class="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">Find your next everyday pair, refresh your rotation, and build your streetstyle with curated footwear bundles from LKIXX.</p>
+<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+<a href="#catalog" class="btn-primary inline-flex items-center justify-center rounded-full px-7 py-4 text-sm font-extrabold transition">Shop bundles ↗</a>
+<a href="#process" class="btn-secondary inline-flex items-center justify-center rounded-full border border-line px-7 py-4 text-sm font-bold transition">How pre-order works</a>
+</div>
+<div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-slate-400">
+<span><span class="mr-2 text-flame">●</span>Weekly batch ordering</span><span><span class="mr-2 text-flame">●</span>CM size guidance</span><span><span class="mr-2 text-flame">●</span>Order checks</span>
+</div>
+<p class="mt-4 max-w-xl text-xs leading-5 text-slate-500">*Promo eligibility and delivery coverage should be confirmed when ordering.</p>
+</div>
+​<div class="hero-float relative mx-auto w-full max-w-xl">
+<div class="absolute inset-8 rounded-full bg-flame/10 blur-3xl" aria-hidden="true"></div>
+<div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#321719] via-[#1b1518] to-[#111215] p-5 shadow-glow sm:p-8">
+<div class="flex items-start justify-between gap-3"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-slate-400">LKIXX / Footwear</p><p class="mt-2 text-2xl font-black">Your next rotation.</p></div><span class="rounded-full border border-flame/40 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-flame">Street essentials</span></div>
+<svg class="mx-auto my-4 w-full max-w-[440px]" style="filter:drop-shadow(0 30px 24px rgba(0,0,0,.42))" viewBox="0 0 560 350" role="img" aria-label="Stylized illustration of a modern sneaker">
+<defs><linearGradient id="upper" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f3f3e9"/><stop offset=".55" stop-color="#c7c9bd"/><stop offset="1" stop-color="#777d75"/></linearGradient><linearGradient id="sole" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f9f9ed"/><stop offset="1" stop-color="#aeb3a6"/></linearGradient></defs>
+<ellipse cx="285" cy="280" rx="205" ry="26" fill="#000" opacity=".35"/>
+<g transform="translate(18 4) rotate(-8 280 180)">
+<path d="M77 219C108 210 138 181 170 146L210 96C224 80 242 77 257 89L318 143C348 164 386 174 430 187L478 207C498 216 512 235 506 251C500 264 482 269 456 269H110C79 269 63 251 77 219Z" fill="url(#upper)" stroke="#eef0e6" stroke-width="3"/>
+<path d="M171 146L208 113L249 153L211 192Z" fill="#8e958b" opacity=".8"/><path d="M226 94L278 143L248 161L208 117Z" fill="#e7e9df"/><path d="M258 99L306 144L280 160L237 119Z" fill="#a7ada1"/><path d="M302 134L338 160L310 180L278 153Z" fill="#e6e8dd"/>
+<path d="M115 212C166 201 197 210 226 229L111 229Z" fill="#353a36"/><path d="M230 229H451C477 229 493 236 497 248C496 261 478 265 451 265H110C89 265 77 256 81 242L87 231C99 228 111 229 115 229Z" fill="url(#sole)" stroke="#f5f6ec" stroke-width="3"/>
+<path d="M97 250C190 258 344 257 490 250" fill="none" stroke="#737a70" stroke-width="3" stroke-linecap="round"/><path d="M190 141L237 184M207 130L253 174M226 121L269 163M246 116L285 154" stroke="#555d54" stroke-width="6" stroke-linecap="round"/>
+<path d="M163 164C180 161 192 166 203 177" stroke="#f9f9f0" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M338 165C363 183 392 189 424 198" stroke="#7c8278" stroke-width="3" fill="none"/>
+<text x="342" y="222" fill="#42483f" font-size="18" font-weight="900" letter-spacing="4">LKXX</text>
+</g>
+</svg>
+<div class="flex items-center justify-between border-t border-white/10 pt-4"><div><p class="text-xs text-slate-400">Curated for your everyday</p><p class="mt-1 font-bold">Style starts with your stride.</p></div><span class="grid h-11 w-11 place-items-center rounded-full bg-flame text-xl font-black text-ink" aria-hidden="true">↗</span></div>
+</div>
+</div>
+</div>
+</section>
+​<section id="about" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+<div class="grid gap-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
+<div><p class="eyebrow text-xs font-extrabold uppercase text-flame">More than footwear</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">A legacy in
+every step.</h2></div>
+<div class="space-y-5 text-sm leading-7 text-slate-300 sm:text-base">
+<p><strong class="text-white">LKIXX</strong> was created in loving memory of a cherished family member whose life ended too soon. The “L” carries her legacy, while “kixx” reflects our love for footwear and the everyday journeys that move us forward.</p>
+<p>Each order is part of a bigger story: family, resilience, and building something meaningful through hard work. We want to help our community find footwear that fits their style and budget—one step at a time.</p>
+<div class="grid gap-4 pt-3 sm:grid-cols-2">
+<article class="rounded-2xl border border-line bg-panel p-5"><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Our mission</p><p class="mt-3 text-sm leading-6 text-slate-300">Make footwear shopping more accessible through clear pricing, size guidance, and an organized pre-order process.</p></article>
+<article class="rounded-2xl border border-line bg-panel p-5"><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Our vision</p><p class="mt-3 text-sm leading-6 text-slate-300">Grow a trusted, community-driven footwear brand built on purpose, care, and forward movement.</p></article>
+</div>
+</div>
+</div>
+<div class="mt-12 grid gap-4 sm:grid-cols-3">
+<article class="rounded-2xl border border-line bg-panel p-5"><span class="text-2xl" aria-hidden="true">↗</span><h3 class="mt-3 font-bold">Batch-based ordering</h3><p class="mt-2 text-sm leading-6 text-slate-400">Orders are grouped into weekly batches to coordinate supplier orders efficiently.</p></article>
+<article class="rounded-2xl border border-line bg-panel p-5"><span class="text-2xl" aria-hidden="true">⌁</span><h3 class="mt-3 font-bold">CM size guidance</h3><p class="mt-2 text-sm leading-6 text-slate-400">Measure your foot in centimeters and confirm the sizing guide before ordering.</p></article>
+<article class="rounded-2xl border border-line bg-panel p-5"><span class="text-2xl" aria-hidden="true">✓</span><h3 class="mt-3 font-bold">Order checks</h3><p class="mt-2 text-sm leading-6 text-slate-400">Orders are checked before dispatch; inspection and delivery timelines are confirmed per batch.</p></article>
+</div>
+</section>
+​<section id="catalog" class="border-y border-line bg-[#1a1012]">
+<div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+<div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+<div><p class="eyebrow text-xs font-extrabold uppercase text-flame">Find your fit</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Bundles & pricing</h2><p class="mt-3 max-w-xl text-sm leading-6 text-slate-400">Choose a single pair or build your rotation. Confirm prices and availability before payment.</p></div>
+<a href="#contact" class="btn-secondary inline-flex items-center justify-center self-start rounded-full border border-line px-5 py-3 text-sm font-bold transition sm:self-auto">Ask about an order ↗</a>
+</div>
+<div class="mt-8 flex flex-wrap gap-2" role="group" aria-label="Filter catalog">
+<button type="button" data-filter="all" aria-pressed="true" class="tab-btn rounded-full bg-flame px-4 py-2.5 text-xs font-extrabold text-ink transition">All options</button>
+<button type="button" data-filter="single" aria-pressed="false" class="tab-btn rounded-full border border-line bg-panel px-4 py-2.5 text-xs font-bold text-slate-300 transition">Single pairs</button>
+<button type="button" data-filter="bundle" aria-pressed="false" class="tab-btn rounded-full border border-line bg-panel px-4 py-2.5 text-xs font-bold text-slate-300 transition">Bundles & sets</button>
+<button type="button" data-filter="mega" aria-pressed="false" class="tab-btn rounded-full border border-line bg-panel px-4 py-2.5 text-xs font-bold text-slate-300 transition">4-in-1 Mega Box</button>
+</div>
+​<div class="mt-6 grid gap-5 md:grid-cols-2">
+<article class="catalog-card product-card single rounded-3xl border border-line bg-panel p-6 sm:p-7">
+<div class="flex items-start justify-between gap-4"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Starter / everyday</p><h3 class="mt-2 text-xl font-black">Single Pair Tiering</h3></div><span class="rounded-full border border-line px-3 py-1 text-[10px] font-bold text-slate-400">01 PAIR</span></div>
+<p class="mt-3 text-sm text-slate-400">Choose an individual pair based on the available grade.</p>
+<div class="mt-5 divide-y divide-line border-t border-line">
+<div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">Class A Daily Beater</span><strong class="whitespace-nowrap text-flame">₱899–₱1,199</strong></div>
+<div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">Premium Grade 1 & 2</span><strong class="whitespace-nowrap text-flame">₱1,499–₱1,999</strong></div>
+<div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">High-OEM / Top Tier</span><strong class="whitespace-nowrap text-flame">₱2,199–₱2,699</strong></div>
+<div class="flex items-center justify-between gap-3 py-3 text-sm"><span class="text-slate-300">Nike Mind Slides</span><strong class="whitespace-nowrap text-flame">₱699–₱899</strong></div>
+</div><p class="mt-4 text-xs leading-5 text-slate-500">Confirm availability, grade details, and sizing before payment.</p>
+</article>
+​<article class="catalog-card product-card bundle rounded-3xl border border-line bg-panel p-6 sm:p-7">
+<div class="flex items-start justify-between gap-4"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Everyday rotation</p><h3 class="mt-2 text-xl font-black">2-Piece Dynamic Duo</h3></div><span class="rounded-full border border-line px-3 py-1 text-[10px] font-bold text-slate-400">2 ITEMS</span></div>
+<p class="mt-3 text-sm text-slate-400">1 × Class A Beater + 1 × Premium Grade Shoe.</p>
+<div class="mt-5 rounded-2xl border border-flame/20 bg-flame/[.06] p-5"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Bundle price</p><p class="mt-1 text-3xl font-black tracking-tight text-flame">₱2,199–₱2,699</p><p class="mt-2 text-xs text-slate-300">Advertised savings: ₱300+ versus separate purchases.</p></div>
+<p class="mt-4 text-xs leading-5 text-slate-500">A practical option for daily rotation and active wear.</p>
+</article>
+​<article class="catalog-card product-card bundle rounded-3xl border border-line bg-panel p-6 sm:p-7">
+<div class="flex items-start justify-between gap-4"><div><p class="eyebrow text-[10px] font-extrabold uppercase text-flame">Complete street set</p><h3 class="mt-2 text-xl font-black">3-Piece Trio Set</h3></div><span class="rounded-full border border-line px-3 py-1 text-[10px] font-bold text-slate-400">3 ITEMS</span></div>
+<p class="mt-3 text-sm text-slate-400">1 × Class A + 1 × Premium + 1 × Nike Mind Slides.</p>
+<div class="mt-5 rounded-2xl border border-flame/20 bg-flame/[.06] p-5"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Bundle price</p><p class="mt-1 text-3xl font-black tracking-tight text-flame">₱2,599–₱3,199</p><p class="mt-2 text-xs text-slate-300">Advertised savings: ₱500+ versus separate purchases.</p></div>
+<p class="mt-4 text-xs leading-5 text-slate-500">Includes slides for casual wear or post-workout use.</p>
+</article>
+​<article class="catalog-card product-card mega relative overflow-hidden rounded-3xl border border-flame/40 bg-gradient-to-br from-[#351919] to-panel p-6 sm:p-7">
+<span class="absolute right-5 top-5 rounded-full bg-flame px-3 py-1 text-[10px] font-black uppercase tracking-wider text-ink">Best value</span>
+<p class="eyebrow text-[10px] font-extrabold uppercase text-flame">The ultimate collection</p><h3 class="mt-2 pr-24 text-xl font-black">4-in-1 Mega Box</h3><p class="mt-3 text-sm text-slate-300">Four items in one bundle. Compare the options below.</p>
+<div class="mt-5 space-y-3">
+<div class="rounded-xl border border-white/10 bg-black/20 p-4"><div class="flex items-start justify-between gap-3"><div><p class="font-bold">Starter Box</p><p class="mt-1 text-xs leading-5 text-slate-400">3 × Class A + 1 × Slides</p></div><strong class="whitespace-nowrap text-flame">₱3,299</strong></div></div>
+<div class="rounded-xl border border-white/10 bg-black/20 p-4"><div class="flex items-start justify-between gap-3"><div><p class="font-bold">Pro Box</p><p class="mt-1 text-xs leading-5 text-slate-400">2 × Class A + 1 × Premium + 1 × Slides</p></div><strong class="whitespace-nowrap text-flame">₱3,699</strong></div></div>
+<div class="rounded-xl border border-white/10 bg-black/20 p-4"><div class="flex items-start justify-between gap-3"><div><p class="font-bold">VIP Box</p><p class="mt-1 text-xs leading-5 text-slate-400">1 × Class A + 2 × Premium + 1 × Slides</p></div><strong class="whitespace-nowrap text-flame">₱3,999</strong></div></div>
+</div><p class="mt-4 text-xs leading-5 text-slate-500">Confirm styles, size availability, and final price when ordering.</p>
+</article>
+</div>
+<p id="filterStatus" class="sr-only" aria-live="polite">Showing all catalog options.</p>
+</div>
+</section>
+​<section id="process" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+<div class="max-w-2xl"><p class="eyebrow text-xs font-extrabold uppercase text-flame">Simple by design</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">How batch ordering works</h2><p class="mt-3 text-sm leading-6 text-slate-400">Review the steps before submitting your order. Availability and delivery timing can vary by batch.</p></div>
+<div class="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 01</p><h3 class="mt-4 font-bold">Submit your order</h3><p class="mt-2 text-sm leading-6 text-slate-400">Complete the Google Form Monday to Friday before the 10 PM cut-off and follow the stated deposit instructions.</p></article>
+<article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 02</p><h3 class="mt-4 font-bold">Friday cut-off</h3><p class="mt-2 text-sm leading-6 text-slate-400">Order details are checked and grouped into the weekly batch.</p></article>
+<article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 03</p><h3 class="mt-4 font-bold">Supplier processing</h3><p class="mt-2 text-sm leading-6 text-slate-400">The batch is submitted to the supplier. Processing and dispatch depend on supplier availability.</p></article>
+<article class="rounded-2xl border border-line bg-panel p-5"><p class="text-xs font-black text-flame">STEP 04</p><h3 class="mt-4 font-bold">Check & delivery</h3><p class="mt-2 text-sm leading-6 text-slate-400">Orders are checked before dispatch. Delivery details are shared once confirmed.</p></article>
+</div>
+<div class="mt-6 rounded-2xl border border-flame/20 bg-flame/[.05] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6"><div><h3 class="font-bold">Before you pay</h3><p class="mt-1 text-sm leading-6 text-slate-400">Confirm the final price, size, product grade, payment terms, delivery coverage, and estimated arrival date.</p></div><a href="#contact" class="btn-primary mt-4 inline-flex shrink-0 items-center justify-center rounded-full px-5 py-3 text-sm font-extrabold transition sm:mt-0">Contact LKIXX ↗</a></div>
+</section>
+​<section id="contact" class="border-t border-line bg-[#1a1012]">
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[.85fr_1.15fr] lg:items-center lg:px-8 lg:py-20">
+<div><p class="eyebrow text-xs font-extrabold uppercase text-flame">Let's get you moving</p><h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Ready for your next pair?</h2><p class="mt-4 max-w-lg text-sm leading-7 text-slate-400">Place your pre-order or message us to ask about sizes, bundle availability, and the next batch.</p></div>
+<div class="rounded-3xl border border-line bg-panel p-5 sm:p-7">
+<a id="orderLink" href="https://forms.gle/YOUR_LIVE_GOOGLE_FORM_LINK" target="_blank" rel="noopener noreferrer" class="btn-primary flex w-full items-center justify-between rounded-xl px-5 py-4 font-extrabold transition"><span><span class="block text-[10px] uppercase tracking-widest opacity-70">Order online</span><span class="mt-1 block">Fill out the pre-order form</span></span><span class="text-xl" aria-hidden="true">↗</span></a>
+<a id="facebookLink" href="https://facebook.com/lkixxph" target="_blank" rel="noopener noreferrer" class="mt-3 flex w-full items-center justify-between rounded-xl border border-line bg-[#202228] px-5 py-4 font-bold transition hover:border-flame/50"><span><span class="block text-[10px] uppercase tracking-widest text-slate-500">Facebook</span><span class="mt-1 block">Message our page</span></span><span class="text-xl" aria-hidden="true">↗</span></a>
+<a id="instagramLink" href="https://instagram.com/lkixx_ph" target="_blank" rel="noopener noreferrer" class="mt-3 flex w-full items-center justify-between rounded-xl border border-line bg-[#202228] px-5 py-4 font-bold transition hover:border-flame/50"><span><span class="block text-[10px] uppercase tracking-widest text-slate-500">Instagram</span><span class="mt-1 block">@lkixx_ph</span></span><span class="text-xl" aria-hidden="true">↗</span></a>
+<p id="placeholderWarning" class="mt-4 rounded-lg bg-emerald-300/10 px-3 py-2 text-xs leading-5 text-emerald-200" hidden>Setup complete: official links connected.</p>
+</div>
+</div>
+</section>
+</main>
+​<button id="backToTop" class="back-to-top fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-flame text-xl font-black text-white shadow-lg shadow-red-950/40" type="button" aria-label="Back to top">↑</button>
+<footer class="border-t border-line px-4 py-8 text-center"><a href="#home" class="text-sm font-black tracking-[.16em]">LKIXX<span class="text-flame">.</span></a><p class="mt-2 text-xs text-slate-500">© <span id="year">2026</span> LKIXX Footwear. All rights reserved.</p><p class="mt-1 text-xs text-slate-600">Every stride honors a legacy.</p></footer>
+​<script>
+// Scroll reveal: progressive enhancement with reduced-motion support.
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const revealTargets = document.querySelectorAll("main section, main section article, main section .rounded-3xl");
+revealTargets.forEach((element, index) => {
+element.classList.add("reveal");
+element.style.transitionDelay = ${Math.min(index % 4, 3) * 70}ms;
+});
+if (reduceMotion || !("IntersectionObserver" in window)) {
+revealTargets.forEach(element => element.classList.add("is-visible"));
+} else {
+const revealObserver = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add("is-visible");
+revealObserver.unobserve(entry.target);
+}
+});
+}, { threshold: 0.12, rootMargin: "0px 0px -35px 0px" });
+revealTargets.forEach(element => revealObserver.observe(element));
+}
+​// Scroll progress and back-to-top control.
+const scrollProgress = document.getElementById("scrollProgress");
+const backToTop = document.getElementById("backToTop");
+let scrollTicking = false;
+function updateScrollUI() {
+const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+scrollProgress.style.width = ${progress}%;
+backToTop.classList.toggle("is-visible", window.scrollY > 500);
+scrollTicking = false;
+}
+window.addEventListener("scroll", () => {
+if (!scrollTicking) {
+window.requestAnimationFrame(updateScrollUI);
+scrollTicking = true;
+}
+}, { passive: true });
+backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }));
+updateScrollUI();
+​// Mobile navigation
+const menuButton = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+function setMenu(open) {
+mobileMenu.classList.toggle("hidden", !open);
+menuButton.setAttribute("aria-expanded", String(open));
+menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+}
+menuButton.addEventListener("click", () => setMenu(menuButton.getAttribute("aria-expanded") !== "true"));
+document.querySelectorAll(".mobile-link").forEach(link => link.addEventListener("click", () => setMenu(false)));
+document.addEventListener("keydown", event => {
+if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
+setMenu(false); menuButton.focus();
+}
+});
+​// Catalog filters
+const filterButtons = document.querySelectorAll(".tab-btn");
+const cards = document.querySelectorAll(".catalog-card");
+const filterStatus = document.getElementById("filterStatus");
+const filterNames = {all:"all catalog options",single:"single pairs",bundle:"bundles and sets",mega:"4-in-1 Mega Box options"};
+filterButtons.forEach(button => button.addEventListener("click", () => {
+const category = button.dataset.filter;
+filterButtons.forEach(item => {
+const active = item === button;
+item.setAttribute("aria-pressed", String(active));
+item.classList.toggle("bg-flame", active);
+item.classList.toggle("text-ink", active);
+item.classList.toggle("border", !active);
+item.classList.toggle("border-line", !active);
+item.classList.toggle("bg-panel", !active);
+item.classList.toggle("text-slate-300", !active);
+item.classList.toggle("font-extrabold", active);
+item.classList.toggle("font-bold", !active);
+});
+cards.forEach(card => card.hidden = category !== "all" && !card.classList.contains(category));
+filterStatus.textContent = "Showing " + filterNames[category] + ".";
+}));
+​// Update copyright year automatically
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
